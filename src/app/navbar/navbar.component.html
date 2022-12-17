@@ -1,0 +1,51 @@
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand title" href="#">
+            <span class="fa fa-home"></span>
+            Bestiario
+        </a>
+        
+        <div class="d-flex justify-content-end">
+          <!--
+          <div ngbDropdown>
+            <button ngbDropdownToggle>Mi dropdown</button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem>item 1</button>
+              <button ngbDropdownItem>item 2</button>
+              <button ngbDropdownItem>item 3</button>
+            </div>
+          </div>
+          -->
+          
+          <!--MANERA NO TAN BONITA PERO POQUITO MAS FUNCIONAL
+            <li class="nav-item dropdown d-flex align-self-center especies_dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Especies</a>
+              <ul class="dropdown-menu dropdown-menu-dark list_especies_dropdown">
+                <app-especies></app-especies>
+              </ul>
+            </li>
+          -->
+          
+          
+          <li class="nav-item dropdown d-flex align-self-center especies_dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Especies</a>
+            <ul class="dropdown-menu dropdown-menu-dark list_especies_dropdown">
+              <li><a class="dropdown-item item_especies_dropdown" href="#">Action</a></li>
+              <li><a class="dropdown-item item_especies_dropdown" href="#">Another action</a></li>
+              <li><a class="dropdown-item item_especies_dropdown" href="#">Something else here</a></li>
+              <li><app-especies></app-especies></li>
+            </ul>
+          </li>
+
+          
+          
+       
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success search_button" type="submit"> <span class="fa fa-solid fa-search"></span></button>
+      </form>
+
+    </div>
+    </div>
+</nav>

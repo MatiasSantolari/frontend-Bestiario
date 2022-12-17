@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Monstruos</h1>
+  <hr>
+  <br>
+  <app-monstruo *ngFor="let m of monstruos.body"
+    [monstruo] = "m"
+    [indice] = "m._id">
+  </app-monstruo>
+</div>
+
