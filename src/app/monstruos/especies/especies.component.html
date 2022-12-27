@@ -1,0 +1,9 @@
+<li class="nav-item dropdown d-flex align-self-center especies_dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Especies</a>
+    <ul class="dropdown-menu dropdown-menu-dark list_especies_dropdown">
+      <li><a class="dropdown-item item_especies_dropdown" href="#">Action</a></li>
+      <li><a class="dropdown-item item_especies_dropdown" href="#">Another action</a></li>
+      <li><a class="dropdown-item item_especies_dropdown" href="#">Something else here</a></li>
+      <li><app-especie *ngFor="let e of especies.body" [especie] = "e" (seleccionarEspecie)="getEspecieSeleccionada($event)" (click)="onPropagar()"></app-especie></li>
+    </ul>
+</li>

@@ -7,8 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MonstruosComponent } from './monstruos/monstruos.component';
 import { MonstruoComponent } from './monstruos/monstruo/monstruo.component';
 import { MonstruosService } from './services/monstruos.service';
-import { EspeciesComponent } from './especies/especies.component';
-import { EspecieComponent } from './especies/especie/especie.component';
+import { EspeciesComponent } from './monstruos/especies/especies.component';
+import { EspecieComponent } from './monstruos/especies/especie/especie.component';
 
 @NgModule({
   declarations: [

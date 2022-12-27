@@ -1,6 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { EspeciesService } from '../services/especies.service';
-import { Especie } from '../models/especie.model';
+import { Component, EventEmitter, OnInit, Output, SimpleChanges } from '@angular/core';
+import { EspeciesService } from '../../services/especies.service';
+import { Especie } from '../../models/especie.model';
 
 @Component({
   selector: 'app-especies',
@@ -10,6 +10,7 @@ import { Especie } from '../models/especie.model';
 export class EspeciesComponent implements OnInit {
 
   especies:any = [];
+  @Output() mostrarEspecie = new EventEmitter<string>();
   especieSeleccionada:any=null;
   constructor(private especieService: EspeciesService) { }
 
@@ -18,6 +19,9 @@ export class EspeciesComponent implements OnInit {
   }
   ngOnInit(): void {
     this.loadEspecies();
+  }
+  onPropagar(){
+    this.mostrarEspecie.emit(this.especieSeleccionada);
   }
 
   getEspecieSeleccionada(espSeleccionada: string){

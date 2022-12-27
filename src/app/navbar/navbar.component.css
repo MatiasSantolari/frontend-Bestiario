@@ -3,21 +3,6 @@
     font-family: "Times New Roman", Times, serif;
     color: rgb(27, 79, 85);
 }
-.especies_dropdown{
-    font-size: 20px;
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(27, 79, 85);
-    margin-right: 40px;
-}
-.list_especies_dropdown{
-    background: #23272b;
-}
-.item_especies_dropdown{
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(27, 79, 85);
-    font-weight: bold;
-}
-.item_especies_dropdown:hover {background: #1a1b1d}
 .search_button{
     color: rgb(27, 79, 85);
 }
