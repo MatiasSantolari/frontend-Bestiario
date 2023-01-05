@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -7,20 +7,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MonstruosComponent } from './monstruos/monstruos.component';
 import { MonstruoComponent } from './monstruos/monstruo/monstruo.component';
 import { MonstruosService } from './services/monstruos.service';
-import { EspeciesComponent } from './monstruos/especies/especies.component';
-import { EspecieComponent } from './monstruos/especies/especie/especie.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MonstruosComponent,
-    MonstruoComponent,
-    EspeciesComponent,
-    EspecieComponent
+    MonstruoComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule
   ],

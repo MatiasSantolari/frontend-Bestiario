@@ -19,9 +19,4 @@ export class MonstruosService {
     const url = this.baseUrl+"monstruos";
     return this.httpClientService.get<any>(url);
   }
-
-  getMonstruosByEspecie(id_especie:String){
-    const url = this.baseUrl + `especies/${id_especie}`;
-    return this.httpClientService.get<any>(url);
-  }
 }
