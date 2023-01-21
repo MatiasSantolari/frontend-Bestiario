@@ -6,6 +6,18 @@
       </h1>
     </div>
   </div>
+<!--Dropdown-->
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="selectOption">Selecciona una opción:</label>
+      <select [(ngModel)]="selectedOption" name="selectOption" id="selectOption">
+        <option *ngFor="let option of options" [ngValue]="option">{{ option }}</option>
+      </select>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+  <label *ngIf="selectedOption">Opción seleccionada: {{ selectedOption }}</label>
+<!--Final de Dropdown-->
   <hr>
   <br>
     <app-monstruo *ngFor="let m of monstruos.body"

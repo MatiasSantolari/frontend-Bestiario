@@ -9,6 +9,8 @@ import { MonstruosService } from '../services/monstruos.service';
 export class MonstruosComponent implements OnInit {
 
   monstruos:any = [];
+  options = ['primigenios', 'dioses antiguos', 'dioses arquetipicos'];
+  selectedOption: string;
   
   constructor(private monstruoService: MonstruosService) { }
 
@@ -17,6 +19,9 @@ export class MonstruosComponent implements OnInit {
   }
   ngOnInit(): void{
     this.loadMonstruos();
+  }
+  onSubmit() {
+    console.log(this.selectedOption);
   }
 
 }
